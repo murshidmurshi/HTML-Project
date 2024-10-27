@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            padding: 10px;
+            height: 45px;
+            background-color: black;
+            position: sticky;
+            top: 0px;
+        }
+
+        li {
+            padding: 10px;
+            display: inline;
+            font-size: 25px;
+            color: white;
+        }
+        .box1{
+            background-color: yellow;
+            display: flex;
+            justify-content: flex-start;
+           /*  align-items: center */
+            height: 1000px;
+            width: 50%;
+            display: inline-block;
+        }
+        .box2{
+            background-color: rgb(66, 255, 66);
+            height: 1000px;
+            display: inline-block;
+            width: 50%;
+        }
+        footer{
+            background-color: antiquewhite;
+        }
+        .center{
+            text-align: center;
+            font-size: 20px;
+        }
+        .left{
+            height: 90vh;
+            width: 30vw;
+            background-color: brown;
+            border: 4px solid black;
+        }
+        .right{
+            height: 90vh;
+            width: 30vw;
+            background-color: rgb(72, 0, 255);
+            border: 4px solid black;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam porro, rerum dolorum exercitationem, unde hic laboriosam inventore beatae quia, recusandae veritatis atque debitis!
+        <div class="left">
+            Left
+        </div>
+    </div><div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium error a molestiae omnis fugiat vitae autem fuga possimus, fugit assumenda. Magnam accusantium sit aspernatur quo, commodi perferendis optio dignissimos a ipsum iusto in natus?
+        <div class="right">
+            Right
+        </div>
+    </div>
+   
+    
+    <footer>
+        <p class="center">Copyright &copy-This is Practise</p>
+    </footer>
+</body>
+
+</html>

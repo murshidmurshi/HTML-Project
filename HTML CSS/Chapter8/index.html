@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: red;
+            height: 400px;
+        }
+
+        .box {
+            border: 3px solid black;
+            display: inline-block;
+            /*  transform: translate(101px, 23px) rotateX(45deg); */
+            /* transform: translate(101px, 23px) rotate(45deg); */
+            /* transform: rotate(0.25turn); */
+            /* transform-origin: 0;  */
+            /*  transform: scaleX(2); */
+            /* transform: scaleY(2); */
+            /* transform: scaleX(3) scaleY(3); */
+            /*   transform: scale(4,5); */
+            /*  transform: skew(0deg, 12deg); */
+            /* transform: rotate(45deg); */
+        }
+
+        img {
+            width: 146px;
+            /* height: 446px; */
+            /* transition:width 3s ease-in 3s; */
+
+
+            /* transition-property: width;
+            transition-duration: 3s;
+            transition-timing-function: ease-in;
+            transition-delay: 3s; */
+            transition: width 3s ease-in 1s;
+            /* transition: width 3s ease-in 1s height 4s ease-in; */
+
+        }
+
+        /* img:hover  {
+            width: 56px;
+        } */
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="myimg" src="bird.jpg" alt="bird">
+            <button id="btn">Click Me</button>
+
+        </div>
+    </div>
+</body>
+<script>
+    myimg.style.width = '146px'
+    /* myimg.style.height = '116px' */
+    btn.addEventListener('click', () => {
+       /*  myimg.style.height = '446px'; */
+        if (myimg.style.width === '546px') {
+            myimg.style.width = '146px';
+        }
+        else if (myimg.style.width === '146px') {
+            myimg.style.width = '546px';
+        }
+    })
+</script>
+
+</html>

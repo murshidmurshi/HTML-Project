@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            height: 100vh;
+            background-color: greenyellow;
+            display: grid;
+            grid-gap: 14px;
+            grid-template-columns: auto auto auto auto;
+        }
+
+        .item1 {
+            /* If you want to do span --Don't give height and width */
+            /*  height: 300px;
+            width: 300px; */
+            background-color: brown;
+            border: 3px solid rgb(0, 0, 0);
+            grid-column: 1/span 3;
+        }
+
+        .item2 {
+            height: 300px;
+            width: 300px;
+            background-color: rgb(216, 73, 73);
+            border: 3px solid rgb(10, 10, 10);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">1</div>
+        <div class="item2">2</div>
+        <div class="item2">4</div>
+        <div class="item2">5</div>
+        <div class="item2">6</div>
+        <div class="item2">7</div>
+        <div class="item2">8</div>
+        <div class="item2">9</div>
+        <div class="item2">10</div>
+
+    </div>
+</body>
+
+</html>

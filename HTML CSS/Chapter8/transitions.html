@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trasition</title>
+    <style>
+        .box{
+            /* display: inline-block; */
+            height: 3px;
+            width: 0px;
+            background-color: red;
+            transition: width 3s ease-out 0s;
+        }
+        .box:hover{
+            width: 100vw;
+        }
+        .box2{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="Box">
+    </div>
+    <div class="box2">
+
+    </div>
+    <button id="btn">Toggle</button>
+</body>
+<script>
+    btn.addEventListener('click',()=>{
+        Box.style.width='100vw';
+    })
+
+</script>
+</html>

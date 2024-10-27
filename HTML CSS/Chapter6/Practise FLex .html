@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline;
+            padding: 0 15px;
+            font-size: 2vw;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 15px;
+        }
+
+        .box1 {
+            height: 90vh;
+            width: 35vw;
+            background-color: red;
+        }
+
+        .box2 {
+            height: 90vh;
+            width: 35vw;
+            background-color: blue;
+        }
+
+        .container {
+            height: 900px;
+            background-color: greenyellow;
+            display: flex;
+            justify-content: space-between;
+            /* align-content: center; */
+            /*             align-content: space-between;
+ */
+        }
+        .box3 {
+            height: 1vh;
+            width: 1vw;
+            background-color: white;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="box3">
+                AA
+            </div>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="box1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum quae, eum laboriosam ea voluptas nam aliquam
+            expedita provident necessitatibus, accusantium corporis beatae atque blanditiis ad natus voluptate deleniti
+            doloribus qui neque rem esse asperiores?
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem mollitia illo voluptas tenetur magni. Ut
+            dicta assumenda quod aperiam commodi cupiditate officiis aspernatur quos, veniam nemo quo, enim minima
+            obcaecati tenetur totam vero odio.
+        </div>
+
+    </div>
+    
+
+</body>
+
+</html>

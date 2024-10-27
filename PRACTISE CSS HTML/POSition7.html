@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     /*    * {
+            margin: 0;
+            padding: 0;
+        } */
+
+        header {
+            background-color: black;
+            color: white;
+            height: 12vh;
+            display: flex;
+            align-items: center; 
+            position: sticky;
+            top: 0px;
+            z-index: 4;
+        }
+
+        nav ul li {
+            display: inline;
+            padding: 0 41px;
+            font-size: 23px;
+        }
+
+        .text-center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px 0px;
+        }
+
+        .container {
+            height: 50vh;
+            width: 50vw;
+            z-index: 2;
+            background-color: #fff00e;
+            margin: auto;
+            padding: 53px;
+        }
+
+        .box1 {
+            height: 44vh;
+            width: 17vw;
+            background-color: blueviolet;
+            text-align: center;
+        }
+
+        .box2 {
+            height: 49vh;
+            width: 18vw;
+            background-color: rgb(16, 246, 169);
+            text-align: center;
+            position: fixed;
+            margin: -27vh 55vw;
+            border: 3px solid #101110;
+        }
+
+
+        .slider {
+            height: 1000px;
+        }
+
+        footer {
+            height: 8vh;
+            color: white;
+            background-color: black;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Contact</li>
+            </ul>
+    </header>
+    <main>
+        <div class="slider">
+            <div class="container">
+                <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque optio provident quae iste
+                    nesciunt
+                </p>
+
+                <div class="box1">I am BOX1</div>
+                <div class="box2">I am BOX2</div>
+            </div>
+        </div>
+    </main>
+    <ul  >
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+    <footer>
+        <p class="text-center">Copyright &copy; MyCart.com</p>
+    </footer>
+</body>
+
+</html>
